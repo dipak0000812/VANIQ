@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VANIQ Studio</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23171a21'/%3E%3Cpath d='M8 9l8 15 8-15' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div id="mode-banner" role="status" hidden></div>
+<div class="app" id="app">
+  <header class="toolbar" role="banner">
+    <button class="btn ghost" id="nav-toggle" aria-label="Collapse navigation" aria-expanded="true"></button>
+    <a class="logo" href="/" aria-label="VANIQ home page"><span class="logo-mark">V</span><span>VANIQ</span></a>
+    <span class="tb-sep"></span>
+    <div class="crumb" aria-label="Current location"><span id="crumb-project" title="Single local project">Ahirani pilot</span><span>/</span><b id="crumb-view">Home</b></div>
+    <span class="tb-spacer"></span>
+    <span class="save-state" id="save-state" role="status" aria-live="polite"><i></i><span>Nothing to save</span></span>
+    <button class="btn" id="open-palette" aria-label="Open command bar"><span>Ask or search</span><span class="kbd">Ctrl K</span></button>
+    <button class="btn" id="tb-export" aria-label="Export dataset">Export</button>
+    <button class="btn agent" id="tb-agent" aria-pressed="false" aria-controls="drawer">VANIQ agent</button>
+  </header>
+  <nav class="nav" id="nav" aria-label="Main"></nav>
+  <main id="main" tabindex="-1"></main>
+</div>
+<aside class="drawer" id="drawer" aria-label="VANIQ agent" aria-hidden="true"></aside>
+<div id="toast" role="status" aria-live="polite"></div>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

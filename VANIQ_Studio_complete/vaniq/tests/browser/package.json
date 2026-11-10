@@ -1,0 +1,7 @@
+{
+  "name": "vaniq-browser-tests",
+  "private": true,
+  "type": "module",
+  "description": "Real-browser E2E for VANIQ Studio. Usage: VANIQ_MODE=demo VANIQ_PORT=8011 python -m src.cli serve  (then POST /api/demo/seed), npm install, node e2e.mjs http://localhost:8011",
+  "dependencies": { "@sparticuz/chromium": "*", "puppeteer-core": "*" }
+}

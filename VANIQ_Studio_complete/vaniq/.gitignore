@@ -1,0 +1,105 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+.hypothesis/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+.env.local
+.env.development
+.env.production
+secrets/
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_dsa
+id_ecdsa
+id_ed25519
+
+# Audio recordings (private/local only)
+audio/
+*.wav
+*.mp3
+*.flac
+*.ogg
+*.m4a
+*.aac
+*.opus
+
+# Reference transcripts (private/local only)
+references/
+
+# Experiment outputs and evaluation artifacts
+results/config_*.json
+results/evaluation.json
+results/evaluation.csv
+results/experiment-log.csv
+results/*.log
+results/runs/
+
+# Dataset Factory outputs (private/generated)
+dataset/
+dataset/**
+!dataset/.gitkeep
+metadata.csv
+**/metadata.csv
+
+# IDE and editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints
+
+# OS
+.DS_Store
+
+# VANIQ Local runtime data (database, uploads, clips, exports)
+data/live/
+data/demo/
+data/*/
+!data/.gitkeep

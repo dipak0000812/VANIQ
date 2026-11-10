@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VANIQ: Voice intelligence for every language</title>
+<meta name="description" content="VANIQ is an AI-native voice-data workspace for collecting, transcribing, correcting, reviewing, evaluating and managing speech data for underrepresented languages, starting with Ahirani.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23171a21'/%3E%3Cpath d='M8 9l8 15 8-15' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/landing.css">
+</head>
+<body class="landing">
+<a class="skip" href="#content">Skip to content</a>
+<header class="lnav">
+  <a class="logo" href="/" aria-label="VANIQ"><span class="logo-mark">V</span><span>VANIQ</span></a>
+  <nav aria-label="Page"><a href="#day">A day with VANIQ</a><a href="#how">How it works</a><a href="#product">Product</a><a href="#truth">What is real</a></nav>
+  <a class="btn primary" href="/app" id="cta-top">Open the studio</a>
+</header>
+<main id="content">
+<section class="hero">
+  <div class="hero-copy">
+    <p class="kicker">Voice-data workspace · starting with Ahirani</p>
+    <h1>Voice intelligence<br>for every language.</h1>
+    <p class="sub">Collect, transcribe, correct, verify, evaluate and export speech data for languages and dialects that speech technology overlooks. An AI agent prepares the work. People verify it. Nothing leaves without permission.</p>
+    <div class="hero-cta"><a class="btn primary big" href="/app#/home" id="cta-hero">Open the studio</a><a class="btn big" href="#how">See how it works</a></div>
+    <p class="fine">Runs locally. Demo mode needs no credentials.</p>
+  </div>
+  <figure class="vignette" aria-label="Illustrative product preview">
+    <div class="wavebars" aria-hidden="true"></div>
+    <div class="v-msg me"><span class="avatar me">Y</span><div>Run baseline mr-IN on the new recording.</div></div>
+    <div class="v-plan"><b>Plan</b> · 2 steps
+      <div class="v-step"><i class="d ok"></i>Validate audio <span class="chip">Reads only</span></div>
+      <div class="v-step"><i class="d"></i>Run STT baseline <span class="chip agent">Needs approval</span></div>
+      <div class="v-appr">Nothing has run yet. <span class="btn ok small" aria-hidden="true">Approve and run</span></div></div>
+    <figcaption>Illustrative preview of the agent’s plan-and-approve flow. Not a live result.</figcaption>
+  </figure>
+</section>
+
+<section id="day" class="band reveal">
+  <p class="kicker">One day of Ahirani data work</p>
+  <h2>The agent does the lookups. You make the calls.</h2>
+  <div class="scenes">
+    <article class="scene"><time>Morning</time><h3>A recording arrives</h3><p>The file is validated, normalised to 16 kHz mono and split at pauses. Quality flags appear next to each segment. Permission starts as <b>unknown</b>, never assumed.</p></article>
+    <article class="scene"><time>Midday</time><h3>A baseline, honestly labelled</h3><p>The agent proposes running the Marathi or auto-detect setting and waits for approval because audio leaves the machine. The result is stored as an <b>STT baseline experiment</b>, never as Ahirani recognition.</p></article>
+    <article class="scene"><time>Afternoon</time><h3>A person writes the reference</h3><p>The reference box starts empty. Seeing the STT text is opt-in. Corrections from the lexicon are proposals; each is accepted, rejected or modified by a person.</p></article>
+    <article class="scene"><time>Evening</time><h3>Only what is permitted leaves</h3><p>Eligibility is computed from consent, permitted usage and human verification. Unknown or denied permissions never appear in a public export.</p></article>
+  </div>
+  <p class="fine center">Scenes are illustrative of the workflow; they contain no performance figures.</p>
+</section>
+
+<section id="how" class="band alt reveal">
+  <p class="kicker">How it works</p>
+  <h2>Three steps, one workspace.</h2>
+  <ol class="steps">
+    <li><span class="n">1</span><h3>Record and upload</h3><p>Upload or record in the browser. Provenance, speaker pseudonym, declared dialect and consent are captured with the audio.</p></li>
+    <li><span class="n">2</span><h3>Baseline and correct</h3><p>Run an STT baseline, then let the dialect lexicon propose corrections. The raw transcript and the provider’s response are always preserved.</p></li>
+    <li><span class="n">3</span><h3>Verify and export</h3><p>Reviewers write and verify references. Evaluation reports WER and CER by experiment role. Exports follow the permission rules.</p></li>
+  </ol>
+</section>
+
+<section id="product" class="band reveal">
+  <p class="kicker">Inside VANIQ</p>
+  <h2>An agent, and an editor for voice data.</h2>
+  <div class="cards">
+    <article class="pcard"><h3>Studio</h3><p>A waveform canvas with segment regions, stacked text tracks (raw, corrected, human reference) and an inspector for dialect, provider output, consent and eligibility.</p></article>
+    <article class="pcard"><h3>Agent and skills</h3><p>Typed, auditable skills run real operations. Safe reads run immediately; STT calls and exports wait for approval. In command mode it says what it cannot do.</p></article>
+    <article class="pcard"><h3>Knowledge</h3><p>Versioned conventions and linguistic references written and approved by people. VANIQ ships none of its own and never invents vocabulary.</p></article>
+    <article class="pcard"><h3>Workflows</h3><p>Chain intake, validation, baseline, review gates, evaluation and export. Every connection is type-checked and carries real data.</p></article>
+  </div>
+</section>
+
+<section id="truth" class="band alt reveal">
+  <p class="kicker">What is real</p>
+  <h2>Careful about the language, honest about the limits.</h2>
+  <div class="truths">
+    <div><h3>Five things, kept apart</h3><p>Declared dialect, provider-detected language, writing script, orthographic convention and the human-verified reference are separate fields. Provider output is never relabelled as Ahirani.</p></div>
+    <div><h3>Gnani is a baseline provider</h3><p>Marathi support is documented by the provider. Native Ahirani recognition has not been independently verified, and VANIQ makes no such claim or accuracy figure.</p></div>
+    <div><h3>Not built yet</h3><p>A trained correction model, dialect identification, authentication and a language-model planner. The agent runs in a labelled command mode.</p></div>
+  </div>
+</section>
+
+<section class="cta reveal"><h2>Open the studio.</h2><p>Start with the demo data, or upload a consented recording.</p><a class="btn primary big" href="/app#/home" id="cta-bottom">Open the studio</a></section>
+</main>
+<footer class="lfoot"><span>VANIQ · Voice intelligence for every language</span><span>Local, single-user prototype</span></footer>
+<script src="landing.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+# Exact versions the handover build was tested with (Python 3.12). Use: pip install -r requirements-lock.txt
+fastapi==0.162.2
+starlette==1.10.0
+uvicorn==0.54.0
+python-multipart==0.0.33
+httpx==0.28.1
+pydantic==2.14.3
+numpy==2.5.4
+scipy==1.18.1
+auditok==0.5.2
+python-dotenv==1.2.4
+pytest==9.2.0
